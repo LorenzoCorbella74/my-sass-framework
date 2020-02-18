@@ -1,0 +1,30 @@
+{
+  "name": "test-sass",
+  "version": "0.0.1",
+  "description": "Test di libreria sass",
+  "main": "public/css/main.css",
+  "scripts": {
+    "prod-build": "node-sass --omit-source-map-url --output-style compressed sass/main.scss public/css/main.css",
+    "dev-build": "node-sass --source-map-embed --source-map-contents --output-style expanded sass/main.scss public/css/main.css",
+    "dev-watch": "npm run dev-build -- --watch",
+    "server": "live-server --open=public --port=5000",
+    "start": "concurrently --kill-others \"npm run dev-watch\" \"npm run server\""
+  },
+  "keywords": [
+    "sass",
+    "setup",
+    "boilerplate",
+    "framework",
+    "ui",
+    "css framework",
+    "front end",
+    "design"
+  ],
+  "author": "Lorenzo Corbella",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.1.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.13.1"
+  }
+}
