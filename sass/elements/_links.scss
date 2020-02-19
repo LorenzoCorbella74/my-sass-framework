@@ -1,0 +1,16 @@
+a {
+    text-decoration: none;
+    color: css-var(link-color);
+    font-weight: 400;
+    transition: opacity .35s ease-out;
+
+    &:focus,
+    &:hover {
+        opacity: 0.75;
+    }
+
+    &:active {
+        opacity: 1;
+        text-decoration: underline;
+    }
+}

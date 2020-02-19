@@ -1,0 +1,14 @@
+ul,
+ol,
+dl {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+ul.circle {
+  list-style: circle inside;
+}
+
+ol {
+  list-style: decimal inside;
+}

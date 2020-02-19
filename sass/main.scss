@@ -1,9 +1,51 @@
-@import './general/reset';
+
+// Variables
+// @import 'vars/breakpoints';
+// @import 'vars/colors';
 @import './general/variables';
+@import './general/base';
 @import './general/normalize';
 
-.container {
-    margin: 0 auto; 
-    font: $myfont;
-    width: map-get($container_width,"lg");
-}
+// Mixins
+@import 'mixins/breakpoint';
+@import 'mixins/centering';
+@import 'mixins/clearfix';
+@import 'mixins/triangle';
+
+// Utility
+@import 'utility/alignment';
+@import 'utility/containers';
+@import 'utility/display';
+@import 'utility/grid';
+@import 'utility/sections';
+
+// ELEMENTS
+@import './elements/typography';
+@import './elements/links';
+@import './elements/lists';
+@import './elements/buttons';
+@import './elements/forms';
+@import './elements/tables';
+
+// Components
+// @import 'components/alerts';
+// @import 'components/breadcrumbs';
+// @import 'components/cards';
+// @import 'components/footer';
+// @import 'components/header';
+// @import 'components/menus';
+// @import 'components/modals';
+// @import 'components/navigation';
+// @import 'components/pagination';
+// @import 'components/panels';
+// @import 'components/pricing-tables';
+// @import 'components/progress-bars';
+// @import 'components/sidebars';
+// @import 'components/steppers';
+// @import 'components/tabs';
+// @import 'components/tags';
+// @import 'components/tooltips';
+
+
+
+

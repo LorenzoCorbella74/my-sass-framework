@@ -1,0 +1,70 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: css-var(heading-font-family);
+  font-weight: css-var(font-weight);
+  color: css-var(heading-font-color);
+  margin: 0 0 1rem;
+  font-weight: 600;
+}
+
+/* 
+  SOURCE: https://stackoverflow.com/questions/39190922/how-to-calculate-with-scss-variables-from-function
+*/
+
+.h1,
+h1 {
+  font-size: calc(#{css-var(font-size-base)} * 3);
+  line-height: calc(#{css-var(font-size-base)} * 3.75);
+}
+
+.h2,
+h2 {
+  font-size: calc(#{css-var(font-size-base)} * 2.5);
+  line-height: calc(#{css-var(font-size-base)} * 3.25);
+}
+
+.h3,
+h3 {
+  font-size: calc(#{css-var(font-size-base)} * 2);
+  line-height: calc(#{css-var(font-size-base)} * 2.75);
+}
+
+.h4,
+h4 {
+  font-size: calc(#{css-var(font-size-base)} * 1.75);
+  line-height: calc(#{css-var(font-size-base)} * 2.5);
+}
+
+.h5,
+h5 {
+  font-size: calc(#{css-var(font-size-base)} * 1.5);
+  line-height: calc(#{css-var(font-size-base)} * 2.25);
+}
+
+.h6,
+h6 {
+  font-size: calc(#{css-var(font-size-base)} * 1.25);
+  line-height: calc(#{css-var(font-size-base)} * 2);
+}
+
+p {
+  margin-bottom: 1.6rem;
+
+  &.small {
+    font-size: calc(#{css-var(font-size-base)} * 0.9);
+    line-height: 1.2;
+  }
+  &.big {
+    font-size: calc(#{css-var(font-size-base)} * 1.1);
+    line-height: 1.8;
+  }
+}
+
+strong,
+b {
+  font-weight: 600;
+}

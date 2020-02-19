@@ -1,14 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test SASS</title>
+    <title>Test SASS Framework</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <div class="container">
-        TEST SASS
-    </div>
+        <div class="row">
+            <div class="col col-md-12">
+                <h1 class="h2">Tipography</h1>
+                <h1>Titolo h1</h1>
+                <h2>Titolo h2</h2>
+                <h3>Titolo h3</h3>
+                <h4>Titolo h4</h4>
+                <h5>Titolo h5</h5>
+                <h6>Titolo h6</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi perspiciatis, inventore temporibus
+                    harum nequeaperiam consequatur fuga voluptatum quae adipisci sequi sed, et autem quibusdam amet!
+                    Quibusdam sed veritatis tempora reiciendis officia autem fugit assumenda ullam, quidem, aliquam,
+                    eligendi labore.</p>
+                <p>Esempi odi paragrafo p con <strong>strong text</strong> e <b>b text</b>. consequatur magnam officiis!
+                    Ad
+                    ratione laborum itaque.</p>
+                <p class="small">E' applicata la classe .small, quaerat dicta pariatur, quis, iure architecto iste
+                    reprehenderit?</p>
+                <p class="big">E' applicata la classe .big, quaerat dicta pariatur, quis, iure architecto iste
+                    reprehenderit?
+                </p>
+                <h3>Links</h3>
+                <a href="#">Link</a>
+                <h3>Lists</h3>
+                <ul>
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                </ul>
+                <ul class="circle">
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                    <li>List</li>
+                </ul>
+                <h1 class="h2">Buttons</h1>
+                <!-- Style Variations -->
+                <p>Style variations:</p>
+                <p>
+                    <button class="button-primary">Default</button>
+                    <button class="button-primary button-round">Default Round </button>
+                    <button class="button-primary-outlined">Outlined</button>
+                    <button class="button-primary-outlined button-round">Outlined Round</button>
+                    <button class="button-primary-text">Text</button>
+                </p>
+
+                <!-- Size Variations -->
+                <p>Size variations:</p>
+                <p>
+                    <button class="button-primary button-large">Large</button>
+                    <button class="button-primary">Standard</button>
+                    <button class="button-primary button-small">Small</button>
+                </p>
+                <p>
+                    <button class="button-primary button-large button-round">Large</button>
+                    <button class="button-primary button-round">Standard</button>
+                    <button class="button-primary button-small button-round">Small</button>
+                </p>
+
+                <!-- Color Variations -->
+                <p>Color variations:</p>
+                <p>
+                    <button class="button-success">Success</button>
+                    <button class="button-info">Info</button>
+                    <button class="button-warning">Warning</button>
+                    <button class="button-danger">Danger</button>
+                </p>
+
+                <h1 class="h2">Forms</h1>
+                <p>Forms have been styled with some basic states that include active, disabled, and invalid states.
+                    These can
+                    be declared using default html attributes or with the
+                    <code class="alt">.invalid</code> class name. A
+                    <code class="alt">.form-control</code> will default to
+                    <code class="alt">width: 100%</code>, but multiple form fields can be included on 1 line by wrapping
+                    them in
+                    a
+                    <code class="alt">.form-control-group</code> class.</p>
+
+                <p><strong>Field Types:</strong></p>
+                <div class="form-control">
+                    <label>Normal Field</label>
+                    <input type="text" placeholder="Enter some info">
+                </div>
+
+                <div class="form-control">
+                    <label>Dropdown Field</label>
+                    <select>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                    </select>
+                </div>
+
+                <div class="form-control">
+                    <label>Text Area</label>
+                    <textarea placeholder="Enter some text..."></textarea>
+                </div>
+
+                <fieldset>
+                    <legend>Toggled Inputs</legend>
+                    <div class="form-control">
+                        <label><input type="checkbox">Checkbox</label>
+                    </div>
+                    <div class="form-control">
+                        <label><input type="radio" name="radio">Radio</label>
+                    </div>
+                    <div class="form-control">
+                        <label><input type="radio" name="radio">Radio</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-control">
+                    <label>Invalid Field</label>
+                    <input class="invalid" type="text" placeholder="Enter valid info">
+                    <p class="validation-error">Please enter a valid value.</p>
+                </div>
+                <div class="form-control-group">
+                    <div class="form-control">
+                        <label>Grouped Field 1</label>
+                        <input type="text" placeholder="Enter valid value 1">
+                    </div>
+                    <div class="form-control grow-2x">
+                        <label>Grouped Field 2</label>
+                        <input type="text" placeholder="Enter valid value 2">
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="h2">Tables</h1>
+            <table>
+                <thead>
+                    <th>Uno</th>
+                    <th>Due</th>
+                    <th>Tre</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ciao</td>
+                        <td>Hello</td>
+                        <td>123</td>
+                    </tr>
+                    <tr>
+                        <td>Ciao</td>
+                        <td>Hello</td>
+                        <td>123</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
 </body>
+
 </html>

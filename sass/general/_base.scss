@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: css-var(font-family);
+  font-size: css-var(font-size-base);
+  line-height: css-var(line-height);
+  font-weight: css-var(font-weight);
+  color: css-var(font-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: css-var(body-bg-color);
+}
